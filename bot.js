@@ -99,7 +99,7 @@ msg.delete();
 
 
 client.on('message', function(message) {
-	const myID = "450843030963093524";
+	const myID = "395060298169581579,352832614190809089";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(adminprefix + "setname")) {
 		        if(message.author.id !== myID) return;
@@ -154,7 +154,7 @@ client.on('message', function(message) {
 
 
 
-const jackeo = ['450843030963093524'];
+const jackeo = ['395060298169581579,352832614190809089'];
 client.on('message', message => { 
   if (message.author.bot) return; 
   if (!message.content.startsWith(prefix)) return;
@@ -183,7 +183,7 @@ if (command == "emb")    {
 
   client.on('message',async message => {
     if(message.content.startsWith(adminprefix + "restart")) {
-        if(message.author.id !== "450843030963093524") return message.reply('You aren\'t the bot owner.');
+        if(message.author.id !== "395060298169581579,352832614190809089") return message.reply('You aren\'t the bot owner.');
         message.channel.send('**Restarting.**').then(msg => {
             setTimeout(() => {
                msg.edit('**Restarting..**');
